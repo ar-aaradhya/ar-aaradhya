@@ -3,148 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Component library</title>
-    <!-- css way:1 - style  -->
-    <!-- <style>
-        body {
-            color:red
-        }
-    </style> -->
-
-
- <!-- 3rd way -->
- <link href= "style.css" rel="stylesheet"/>
+    <title>home | aaradhyarai
+    </title>
+    <link href= "style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
-
 <body>
-   <h1>Welcome to aaradhya rai's component libraray.</h1> 
-   <p>I am attending neog.camp and I want to make a library which could make all my projects look good and consistent. </p>
-    <p>This paragraph will have a <strong>bold</strong> text</p>
-<hr >
-
-<h2> @typography</h2>
-
-
-<h1> This is the biggest heading</h1>
-<h2> This is the second biggest </h2>
-
-<p> Let me show you the normal text. This is free flowing and wil wrap end like a paragrap</p>
-<small> This is relatively smaller text</small>
-<hr > 
-<h2>@containers</h2>
-<h3>Fluid container</h3>
-<div>This is a fluid containner and it will go till the end of the page</div>
-<h3>center container</h3>
-<div>This is a centered container and it will go till the specified width</div>
-<hr>
-<h2>@links</h2>
-
-<a href="https://google.com">tanay</a>
-
-<a href="/">Pimary link</a>
-<a href="/">secondary link</a>
-<hr>
-
-<div>
-    Here's my list
-    <div>1.item one</div>
-    <div>2.item two</div>
-    <div>3.item three</div>
-</div>
-<hr>
-
-<h2>@lists</h2>
-<h3>Unordered list</h3>
-<ul> 
- <li>item one</li>
- <li>itm two</li>
- <li>item three</li>
-</ul>
-
-<h3>Unordered inline list</h3>
-<ul>
- <li>inline item one </li>
- <li>inline item two</li>
- <li>inline item three</li>
- </li>
-
-</ul>
-
-<h3>reverse ordered list</h3>
-
-<ol>
-<li>mik</li>
-<li>bread</li>
-<li>eggs</li>
-
-</ol>
-<hr />
-
-<h2>@nav</h2>
-
-<nav>
-    <div>i am brand</div>
-    <ul>
-        <li>
-            <a href="/">home</a>
+    
+<nav class="navigation container">
+    <div class="nav-brand"> <a class="link link-active" href="/">I am Aaradhya</a></div>
+    <ul class="list-non-bullet nav-pills">
+        <li class="list-item-inline">
+            <a class="link link-active"href="/">home</a>
         
         </li>
-        <li>
-            <a href="/">about</a>
+        <li class="list-item-inline">
+            <a class="link"href="/projects.html">Projects</a>
         </li>
+        <li class="list-item-inline">
+            <a class="link" href="/blogs.html">Blogs</a>
+        </li>
+        <li class="list-item-inline">
+            <a class="link" href="/Books.html">Blogs</a>
+        </li>
+ 
     </ul>
 </nav>
 
-<hr>
+<header class="hero">
+    <div class="wrapper">
 
-<h2>header</h2>
-
-<header>
-    <img src="images/Book.svg"/>
-    <h1>Heading inside hero</h1>
+        <div class="item">
+          <div class="polaroid"><img src="images/WhatsApp Image 2020-11-27 at 12.26.16.jpeg">
+            <div class="caption">it's me</div>
+          </div>
+        </div>
+      
+    <h1 class="hero-heading" >Hello There! I'm Aaradhya a <span style="color: var(--secondary-color)" > Full Stack Web Developer.</span> </h1>
     
 </header>
-<hr>
 
-<h2>@Section</h2>
-<section><h3>white section</h3>
-    <p> this will have white backround</p>
+
+<section class="section">
+    
+    
+    <div class="container container-center about-me">
+    <img class="container container-center about-me_image" src="images/orangishwoman.svg"/>
+    <div class="container container-center about-me_text">
+        <h1>About Me</h1>
+   <p>I am a <span style="color: gray">2020 commerce graduate</span>. I am in transition phase to be a <strong>Web Developer</strong>. </p>
+    <p>I am a curious mind, a self-learner and life-long explorer.</p>
+    <p>I am now obsessed with making things and even more obsessed to learn to make things better. I love to read, sketch & travel. For me, Web development is everything I was ever looking for. I have spent my whole 3 years of college looking out for what i actually love doing. And here I am. I genuinely loved the idea to code things from scratch, and enjoy brining ideas to life in the browser.  </p>
+    </div>
+    </div>
 </section>
 
-
-<section>
-    <h3>off white section</h3>
-    <p> this will have gray backround</p>
-
+<section class="section ow">
+    <h1>Look what I can do</h1>
+    <div class="container container-center">
+    <p>I'm familiar with <strong style="color: var(--secondary-color)" >HTML5, CSS3, Git, JavaScript, NodeJS, ReactJS, and Web Hosting.</strong></strong></p>
+    
+    </div>
+    
 </section>
-<hr>
 
+<section class="section">
+    <h1>Projects</h1>
+    <div class="container container-center">
+    <p>I like to showcase my work and thus, you can see my projects hosted online.</p>
+    <a class="link link-primary" href="/projects.html">Browse Projects</a>
+    </div>
+    
+</section>
+<section class="section ow">
+    <h1>Blogs</h1>
+    <div class="container container-center">
+    <p>Sometimes, I write.</p>
+    <p>I would be documenting my journey of learning. Make sure to Follow along.</p>
+    <a class="link link-primary" href="/blogs.html">My Blogs</a>
+    </div>
+    
+</section>
 
-<h2>@footer</h2>
-<footer>
-    <div>some small heading inside footer</div>
-    <ul>
-        <li>socialOne</li>
-        <li>social two</li>
-        <li>socialthre</li>
-        
+<footer class="footer">
+    <div class="footer-header">Let's be Internet BFFs ❤</div>
+    <ul class="social-links list-non-bullet">
+        <li class="list-item-inline"><a class=" link"href="mailto: raiaaradhya98@gmail.com"target="_blank"><i class="fa fa-envelope"> mail</i></a></li>
+        <li class="list-item-inline"><a class=" link"href="https://www.linkedin.com/in/ar98/"target="_blank"><i class='fa fa-linkedin'> linkedin</i></a></li>
+        <li class="list-item-inline"><a class=" link"href="https://twitter.com/the_unending"target="_blank"><i class='fa fa-twitter'> twitter</i></a></li>
+        <li class="list-item-inline"><a class=" link"href="https://www.instagram.com/theunendingpages/"target="_blank"><i class='fa fa-instagram'> Instagram</i></a></li>
+        <li class="list-item-inline"><a class=" link"href="https://github.com/ar-aaradhya"target="_blank"><i class='fa fa-github'> github</i></a></li>
     </ul>
+    <i class="ph-copyright"></i>
+ <div> Handcrafted by me © twentytwenty  </div>
+ 
 </footer>
-
-
-
-
-
-
-
-
-
-
-
-<!-- 
-<div style="height:20vh;">
-</div> -->
-
 </body>
 </html>
+

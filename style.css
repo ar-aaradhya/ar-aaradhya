@@ -2,4 +2,231 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    margin: 0px;
 }
+
+:root {
+    --primary-color:#6B7280;
+    --dark-gray: #6B7280;
+    --off-white: #F3F4F6;
+    --light-green: #F0FDFA;
+    --secondary-color: #EA580C;
+
+
+}
+
+/* container */
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+}
+
+.container-center {
+    max-width: 600px;
+    margin: auto;
+  
+   
+}
+
+/* link */
+.link-primary {
+    background-color: var(--secondary-color);
+    border-radius: 2rem;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    
+}
+
+
+.link {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+   
+}
+
+.secondary-link {
+    color: var(--primary-color);
+    border-radius: 2rem;
+    border: 1px solid var(--primary-color);
+    padding:0.6rem 1.2rem;
+
+}
+
+
+hr {
+    margin: 2rem 0rem;
+}
+
+.list-non-bullet {
+    list-style: none;
+}
+
+.list-item-inline {
+    display: inline;
+    padding: 0rem 0.5rem;
+
+}
+
+.navigation {
+    background-color: var(--primary-color);
+    border-bottom-left-radius: 1rem;
+    color: white;
+    padding: 1rem 3rem;
+
+
+}
+
+.navigation .nav-brand {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.navigation .link {
+    color: white;
+}
+
+.navigation .nav-pills {
+    text-align: right;
+}
+
+.navigation .link-active {
+    font-weight: bold;
+}
+
+
+/* header */
+.hero {
+    padding: 2rem;
+    padding-top: 2rem;
+}
+
+.hero .hero-img {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+    margin: auto;
+
+}
+
+.hero .hero-heading {
+    font-size: 2rem;
+    padding: 1rem;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+/* .hero .hero-heading .heading-inverted {
+    color: var(--primary-color);
+} */
+/* it will do the same job. */
+
+
+.section {
+    padding: 2rem;
+}
+.section h1 {
+    text-align: center;
+    padding: 2rem;
+
+}
+
+.ow {
+    background-color: var(--off-white);
+    padding: 2rem 0;
+    border-radius: 2rem;
+}
+
+.about-me{
+    border: 3px solid #FED7AA;
+    border-radius:3rem;
+    padding: 20px 40px 40px;
+    max-width: 640px;
+    display: flex;
+    background-color: var(--off-white);
+
+   
+ &_image {
+    display: inline-block;
+    vertical-align: center;
+    object-fit:contain;
+    align-self:flex-start;
+    width: 200px;
+    margin:20px 30px 0px 0px;
+ }   
+ &_text{
+   
+   flex: 1 1 auto;
+    }
+}
+
+
+
+/* footer */
+.footer{
+    background-color: var(--primary-color);
+    padding:2rem 1rem;
+    border-top-right-radius: 2rem;
+    text-align: center;
+    color: white;
+    
+}
+
+.footer .link {
+    color: white;
+}
+
+.footer .footer-header{
+    
+    font-weight: bold;
+    font size: large;
+}
+
+.footer ul{
+    padding-inline-start: 0px;
+}
+
+
+
+
+
+
+.wrapper {
+  width: 100%;
+  padding: 0 2rem;
+  text-align: center;
+}
+.polaroid {
+  background:white;
+  padding: 1rem;
+  box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+  
+}
+.polaroid > img{
+  max-width: 100%;
+  height: auto;
+}
+.caption {
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 2em;
+}
+.item {
+  width: 30%;
+  display: inline-block;
+  margin-top: 2rem;
+  filter: grayscale(100%);
+}
+
+.item:hover {
+  filter: none;
+  transform: scale(1, 1) rotate(0deg) !important;
+  transition: all 0.35s;
+}
+
+
+body {
+    max-width: 70%;
+    margin: auto;
+}
+
