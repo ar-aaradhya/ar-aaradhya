@@ -1,58 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
 }
 
-:root {
-    --primary-color:#6B7280;
+ :root {
+    --primary-color: #6B7280;
     --dark-gray: #6B7280;
     --off-white: #F3F4F6;
     --light-green: #F0FDFA;
     --secondary-color: #EA580C;
-
-
 }
 
+
 /* container */
+
 .container {
     padding-left: 1rem;
     padding-right: 1rem;
-    
 }
 
 .container-center {
     max-width: 600px;
     margin: auto;
-  
-   
 }
 
+
 /* link */
+
 .link-primary {
     background-color: var(--secondary-color);
     border-radius: 2rem;
     color: white;
     padding: 0.6rem 1.2rem;
-    
 }
-
 
 .link {
     text-decoration: none;
     padding: 0.5rem 1rem;
-   
 }
 
 .secondary-link {
     color: var(--primary-color);
     border-radius: 2rem;
     border: 1px solid var(--primary-color);
-    padding:0.6rem 1.2rem;
-
+    padding: 0.6rem 1.2rem;
 }
-
 
 hr {
     margin: 2rem 0rem;
@@ -65,7 +58,6 @@ hr {
 .list-item-inline {
     display: inline;
     padding: 0rem 0.5rem;
-
 }
 
 .navigation {
@@ -73,8 +65,6 @@ hr {
     border-bottom-left-radius: 1rem;
     color: white;
     padding: 1rem 3rem;
-
-
 }
 
 .navigation .nav-brand {
@@ -96,8 +86,8 @@ hr {
 
 
 /* header */
+
 .hero {
-    padding: 2rem;
     padding-top: 2rem;
 }
 
@@ -106,7 +96,6 @@ hr {
     display: block;
     margin: auto;
     margin: auto;
-
 }
 
 .hero .hero-heading {
@@ -116,20 +105,22 @@ hr {
     text-align: center;
 }
 
-/* .hero .hero-heading .heading-inverted {
-    color: var(--primary-color);
-} */
-/* it will do the same job. */
 
+/* .hero .hero-heading .heading-inverted {
+color: var(--primary-color);
+} */
+
+
+/* it will do the same job. */
 
 .section {
     padding: 2rem;
     text-align: center;
-    margin:1rem 0;
+    margin: 1rem 0;
 }
+
 .section h1 {
     text-align: center;
-
 }
 
 .ow {
@@ -138,108 +129,237 @@ hr {
     border-radius: 2rem;
 }
 
-.about-me{
+.about-me {
     border: 3px solid #FED7AA;
-    border-radius:3rem;
+    border-radius: 3rem;
     padding: 20px 40px 40px;
-    max-width:640px;
+    max-width: 640px;
     display: flex;
     background-color: var(--off-white);
+}
 
-   
- &_image {
+image {
     display: inline-block;
     vertical-align: center;
-    object-fit:contain;
-    align-self:flex-start;
+    object-fit: contain;
+    align-self: flex-start;
     width: 200px;
-    margin:20px 30px 0px 0px;
- }   
- &_text{
-   
-   flex: 1 1 auto;
-    }
+    margin: 20px 30px 0px 0px;
 }
 
 
+/* &_text{
+
+flex: 1 1 auto;
+}
+} */
+
 
 /* footer */
-.footer{
+
+.footer {
     background-color: var(--primary-color);
-    padding:2rem 1rem;
+    padding: 2rem 1rem;
     border-top-right-radius: 2rem;
     text-align: center;
     color: white;
-    margin-top:2rem;
-    
+    margin-top: 2rem;
 }
 
 .footer .link {
     color: white;
 }
 
-.footer .footer-header{
-    
+.footer .footer-header {
     font-weight: bold;
-    font size: large;
+    font-size: large;
 }
 
-.footer ul{
+.footer ul {
     padding-inline-start: 0px;
 }
 
-
-
-
-
-
 .wrapper {
-  width: 100%;
-  padding: 0 2rem;
-  text-align: center;
+    width: 100%;
+    /* padding: 0 2rem; */
+    text-align: center;
 }
+
 .polaroid {
-  background:white;
-  padding: 1rem;
-  box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
-  
+    background: white;
+    padding: 1rem;
+    box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.2);
 }
-.polaroid > img{
-  max-width: 100%;
-  height: auto;
+
+.polaroid>img {
+    max-width: 100%;
+    height: auto;
 }
+
 .caption {
-  font-size: 1.8rem;
-  text-align: center;
-  line-height: 2em;
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 2em;
 }
+
 .item {
-  width: 30%;
-  display: inline-block;
-  margin-top: 2rem;
-  filter: grayscale(100%);
+    width: 30%;
+    display: inline-block;
+    margin-top: 2rem;
+    filter: grayscale(100%);
 }
 
 .item:hover {
-  filter: none;
-  transform: scale(1, 1) rotate(0deg) !important;
-  transition: all 0.35s;
+    filter: none;
+    transform: scale(1, 1) rotate(0deg) !important;
+    transition: all 0.35s;
 }
-
 
 body {
     max-width: 70%;
     margin: auto;
 }
 
-
-@media screen and (max-width: 700px) {
-    .item{
-        width: 100%;
-   
-   }
- .navigation{
-    width: 100%;
- }
+@media screen and (min-width: 700px) {
+    .below-img {
+        display: none;
+    }
 }
 
+@media screen and (max-width: 700px) {
+    .item {
+        width: 100%;
+    }
+    .above-img {
+        display: none;
+    }
+    .project-btns {
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        display: block;
+        margin: 1rem;
+        text-align: center;
+    }
+    .hero .hero-img {
+        max-width: 280px;
+    }
+    .hero {
+        margin-top: 2rem;
+        padding: 0;
+    }
+    .list-non-bullet {
+        padding-left: 0;
+    }
+    .about-me {
+        display: block;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0.5rem 0;
+    }
+    .about-me-section {
+        padding: 0;
+    }
+    /* .about-me-text {
+padding: 0;
+} */
+    /* .section {
+        padding: 0;
+    } */
+}
+
+
+/* /Updates Navigator / */
+
+.navbar {
+    background-color: var(--primary-color);
+    padding: 1rem 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 0.5rem;
+}
+
+.navbar ul {
+    text-align: end;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.links {
+    text-decoration: none;
+    color: white;
+}
+
+.list-unordered {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+
+/* /Updated about me/ */ */
+
+
+ .about-me {
+display: flex;
+margin: auto;
+max-width: 90%;
+margin-top: 4rem;
+margin-bottom: 4rem;
+}
+
+.about-me-text {
+flex: 50%;
+margin: 4rem 0;
+padding: 3rem;
+}
+
+.about-me-text p {
+font-size: 1.1rem;
+color: #1c3548;
+line-height: 1.3rem;
+ margin: 0rem 0rem 0.625rem 0rem; 
+
+
+}
+.about-me-text h1 {
+font-size: 2rem;
+color: #1c3548;
+ margin: 0rem 0rem 0.625rem 0rem; 
+}
+.about-me h3 {
+margin-top: 1rem;
+}
+.about-me li {
+line-height: 1.5rem;
+}
+.model-2 {
+flex: 50%;
+margin: 4rem 0;
+}
+.model-2 img {
+width: 100%;
+ height: 100%; 
+
+height: auto;
+max-width: 700px;
+display: inline-block;
+vertical-align: center;
+object-fit: contain;
+align-self: flex-start;
+}
+
+.bookone {
+    height:auto;
+    max-width: 50%;
+
+
+}
