@@ -124,10 +124,11 @@ hr {
 
 .section {
     padding: 2rem;
+    text-align: center;
+    margin:1rem 0;
 }
 .section h1 {
     text-align: center;
-    padding: 2rem;
 
 }
 
@@ -141,7 +142,7 @@ hr {
     border: 3px solid #FED7AA;
     border-radius:3rem;
     padding: 20px 40px 40px;
-    max-width: 640px;
+    max-width:640px;
     display: flex;
     background-color: var(--off-white);
 
@@ -169,6 +170,7 @@ hr {
     border-top-right-radius: 2rem;
     text-align: center;
     color: white;
+    margin-top:2rem;
     
 }
 
@@ -228,5 +230,16 @@ hr {
 body {
     max-width: 70%;
     margin: auto;
+}
+
+
+@media screen and (max-width: 700px) {
+    .item{
+        width: 100%;
+   
+   }
+ .navigation{
+    width: 100%;
+ }
 }
 
